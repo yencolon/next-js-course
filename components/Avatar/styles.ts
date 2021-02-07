@@ -1,13 +1,16 @@
 import { css } from '@emotion/react';
 
 const avatarContainer = css`
-    border: 1px solid black;
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 1.5px solid var(--page-color-accent);
+    height: 99px;
+    width: 99px;
+    border-radius: 50%;
+    padding: 0;
 `;
 
-export { avatarContainer }
+const image = css`
+    object-fit: cover;
+    border-radius: 50%;
+`;
+
+export { avatarContainer, image }

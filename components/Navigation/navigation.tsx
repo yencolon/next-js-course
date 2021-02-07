@@ -1,5 +1,5 @@
 import Link from 'next/link';
-const Navigation = () => (
+const Navigation: React.FC = () => (
   <nav>
     <Link href="/">
       <span aria-label="Liink">Link</span>

@@ -1,5 +1,5 @@
 import { mainContentContainer, title } from './styles';
-const MainContent = () => {
+const MainContent: React.FC = () => {
   return (
     <section css={mainContentContainer}>
       <h1 css={title}> Hi, I'm Yen. </h1>

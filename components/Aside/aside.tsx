@@ -1,5 +1,6 @@
 import Avatar from '@components/Avatar';
 import { Email, GitHub, LinkedId, Pin } from '@shared/Icons';
+import { metadata } from 'config';
 import { container, infoContainer, contactInfoContainer } from './styles';
 const Aside = () => {
   return (
@@ -21,12 +22,12 @@ const Aside = () => {
             </a>
           </li>
           <li>
-            <a href='https://www.linkedin.com/in/yencolon/' target="_blank" rel="noopener noreferrer">
+            <a  aria-label="To Yen's Linkedin" href={metadata.author.linkedinUrl} target="_blank" rel="noopener noreferrer">
               <LinkedId /> linkedin
             </a>
           </li>
           <li>
-            <a href='https://github.com/yencolon' target="_blank" rel="noopener noreferrer">
+            <a aria-label="To Yen's Github" href={metadata.author.githubUrl} target="_blank" rel="noopener noreferrer">
               <GitHub />
               github
             </a>

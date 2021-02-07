@@ -1,10 +1,10 @@
 import { footerContainer, copyrightText } from './styles';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <div css={footerContainer}>
       <footer>
-        <div css={copyrightText}>© 2021 Yen Colon. Made with Next deploy with Vercel.</div>
+        <small css={copyrightText}>© 2021 Yen Colon. Made with Next deploy with Vercel.</small>
       </footer>
     </div>
   );

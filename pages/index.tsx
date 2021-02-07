@@ -1,14 +1,12 @@
-import Head from 'next/head';
 import LandingLayout from 'layouts/LandingLayout';
 import MainContent from '@components/MainContent';
+import Seo from '@components/Seo';
+import { metadata } from 'config';
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Seo title='Yen Colon' description={metadata.siteName} />
       <LandingLayout>
         <MainContent />
       </LandingLayout>

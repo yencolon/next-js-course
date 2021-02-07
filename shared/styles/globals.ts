@@ -8,6 +8,7 @@ export const globalStyles = css`
     --page-text-invert: #706fd3;
     --page-background-accent: #474787;
     --page-color-accent: #706fd3;
+    --page-color-main: #e67e22;
   }
   html,
   body {

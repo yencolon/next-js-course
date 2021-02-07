@@ -1,6 +1,6 @@
-import React from 'react';
+import { ReactNode } from 'react';
 interface ILandingProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export default ILandingProps;
