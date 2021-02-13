@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 
 const avatarContainer = css`
-    border: 1.5px solid var(--page-color-accent);
+    border: 3px solid var(--page-color-accent);
     height: 99px;
     width: 99px;
     border-radius: 50%;

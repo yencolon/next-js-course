@@ -7,8 +7,10 @@ const container = css`
     align-items: center;
     padding: 2.5rem;
     opacity: 0.7;
+    transition: opacity 0.75s;
     :hover{
-        opacity: 1
+        opacity: 1;
+        transition: opacity 2s;
     }
 `;
 
