@@ -1,5 +1,6 @@
 const metadata = {
     siteName: 'Yen Colon',
+    description: 'Pagina Yen Colon',
     author: {
         twitter: '@yenjcc',
         github: 'yencolon',
@@ -10,4 +11,6 @@ const metadata = {
     }
 }
 
-export { metadata };
+const POST_DIR = './posts'
+
+export { metadata, POST_DIR};

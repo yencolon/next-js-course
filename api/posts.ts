@@ -2,19 +2,17 @@ import { promises as fs, readdirSync } from 'fs';
 import path from 'path';
 import renderToString from 'next-mdx-remote/render-to-string';
 import matter from 'gray-matter';
+import { IPostFileType } from '@shared/types/props/IPostTypes';
 
-type PostFile = {
-  filepath: string;
-  slug: string;
-};
 
-const getDirData = (source: string): PostFile[] =>
+
+const getDirData = (source: string): IPostFileType[] =>
   readdirSync(source).map((name) => ({
     filepath: `${source}/${name}`,
     slug: name.replace(new RegExp(path.extname(name) + '$'), '')
   }));
 
-const formatPostList = async ({ filepath, slug }: PostFile) => {
+const formatPostList = async ({ filepath, slug }: IPostFileType) => {
   const mdxSource = await fs.readFile(filepath);
   const { content, data: frontMatter } = matter(mdxSource);
 

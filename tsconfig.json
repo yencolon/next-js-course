@@ -4,6 +4,7 @@
     "paths": {
       "@components/*": ["components/*"],
       "@shared/*": ["shared/*"],
+      "@api/*": ["api/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
