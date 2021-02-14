@@ -3,7 +3,7 @@ import LandingLayout from 'layouts/LandingLayout';
 import Seo from '@components/Seo';
 import { metadata, POST_DIR} from 'config';
 import { getPosts } from '@api/posts';
-import BlogList from '@components/BlogList';
+import BlogList from '@components/MainContent';
 
 export default function Home({posts}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (

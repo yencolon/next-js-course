@@ -9,6 +9,11 @@ export const globalStyles = css`
     --page-background-accent: #474787;
     --page-color-accent: #706fd3;
     --page-color-main: #e67e22;
+    --xs: 600px;
+    --sm: 768px;
+    --md: 992px;
+    --lg: 1200px;
+    --xl: 1900px;
   }
   html,
   body {

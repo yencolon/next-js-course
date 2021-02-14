@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+import { theme } from '@shared/styles/theme';
 
 const footerContainer = css`
     background-color: #1e272e;
@@ -7,6 +8,10 @@ const footerContainer = css`
     display: flex;
     align-items: center;
     padding: 2.5rem 2rem;
+    @media (max-width: ${theme.screens.sm}) {
+        padding: 1rem 2.5rem;
+        justify-content: center;
+    }
 `;
 
 const copyrightText = css`

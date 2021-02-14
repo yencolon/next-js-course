@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-
+import { theme } from '@shared/styles/theme';
 const container = css`
     width: 30%;
     display: flex;
@@ -11,6 +11,10 @@ const container = css`
     :hover{
         opacity: 1;
         transition: opacity 2s;
+    }
+    @media (max-width: ${theme.screens.sm}){
+       width: 100%;
+       opacity: 1;
     }
 `;
 

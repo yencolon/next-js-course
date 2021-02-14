@@ -6,13 +6,13 @@ import Footer from '@components/Footer';
 
 const LandingLayout: React.FC<ILandingProps> = (props) => {
   return (
-    <div>
+    <>
       <Header />
       <section css={container}>
         <Aside /> {props.children}
       </section>
       <Footer />
-    </div>
+    </>
   );
 };
 
